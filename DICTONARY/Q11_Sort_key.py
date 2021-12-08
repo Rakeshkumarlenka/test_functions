@@ -13,7 +13,7 @@ class SortDict:
         return self.dict
 
 
-my_dict = {'key1': 5, 'key2': 7.5, 'key3': 3, 'key4': 1, }
+my_dict = {'key1': 5, 'key3': 3, 'key4': 1, }
 me = SortDict(my_dict)
 
 print(me.get_value())
