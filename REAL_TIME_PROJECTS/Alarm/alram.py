@@ -34,7 +34,7 @@ while True:
         print('| '+'Wake up!'+' |')
         print('*'*10)
         if music_or_beep=='m':
-            playsound('audio.wav')
+            playsound('C:\\Users\\RAJESH\\AppData\\Local\\Programs\\Python\\Python38\\aud.wav')
         else:
             winsound.Beep(freq,dur)
         break
