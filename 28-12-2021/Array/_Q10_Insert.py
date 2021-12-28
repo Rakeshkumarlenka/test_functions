@@ -1,0 +1,11 @@
+from array import *
+class Insert:
+    def ins_array(self):
+        array_num = array('i', [1, 3, 5, 7, 9])
+        print("Original array: " + str(array_num))
+        print("Insert new value 4 before 3:")
+        array_num.insert(1, 4)
+        print("New array: " + str(array_num))
+
+res = Insert()
+res.ins_array()

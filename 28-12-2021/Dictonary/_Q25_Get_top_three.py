@@ -1,0 +1,10 @@
+class Get_top:
+    def top_three(self):
+        from heapq import nlargest
+        from operator import itemgetter
+        items = {'item1': 45.50, 'item2': 35, 'item3': 41.30, 'item4': 55, 'item5': 24}
+        for name, value in nlargest(3, items.items(), key=itemgetter(1)):
+            print(name, value)
+
+res = Get_top()
+res.top_three()
