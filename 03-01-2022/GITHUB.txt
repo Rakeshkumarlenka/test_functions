@@ -1,0 +1,48 @@
+GIT MERGE RQUEST:
+-----------------------------------------------
+
+Merge Request and Pull request basically refers to same thing. Tools such as GitHub and Bitbucket choose the name pull request since the first manual action would be to pull the feature branch. Tools such as GitLab and Gitorious choose the name merge request since that is the final action that is requested of the assignee.
+
+Pull/Merge requests are created if you are working in a feature branch and wants to merge your change in main branch(eg. Master branch). The merge requests serves as a code review tool and if your code reveals shortcomings/issues anyone(usually other developers) can commit and push a fix.
+
+Life cycle : You create a branch, fix some issue or add a feature, create a pull/merge request, then you assign it to someone, he/she will review your fix and can accept/reject the pull/merge request.
+
+Please note that a merge/pull request should not be confused with the "git merge" or "git pull" command.
+
+GIT MERGE:
+------------------------------------------------
+
+Git merging combines sequences of commits into one unified history of commits.
+There are two main ways Git will merge: Fast Forward and Three way
+Git can automatically merge commits unless there are changes that conflict in both commit sequences.
+
+GIT REBASE::
+----------------------------------------
+Rebase is an action in Git that allows you to rewrite commits from one branch onto another branch. Essentially, Git is deleting commits from one branch and adding them onto another.
+
+-------------------------------------------------
+Git Rebase==>
+----------
+Streamlines a potentially complex history.
+Avoids merge commit “noise” in busy repos with busy branches.
+Cleans intermediate commits by making them a single commit, which can be helpful for DevOps teams.
+Git Merge::=>
+-----------
+Simple and familiar.
+Preserves complete history and chronological order.
+Maintains the context of the branch.
+
+===If you're working alone or on a small team, use rebase. If you're working with a big team, use merge. 
+-------------------------------------------------------------------------------
+===============================================================================
+Here we need to see the difference between
+
+Origin ,Master & origin/master
+
+Origin: This is the name of a remote. A remote in Git is a common repository that all team members use to exchange their changes. In most cases, this will be an origin.
+
+Master: This is a branch name where we first initiate git and then we use to make commits.
+
+And the changes in the master can pull/push into a remote.
+
+origin/master: This is a remote branch, which has a local branch named master on a remote named origin.
