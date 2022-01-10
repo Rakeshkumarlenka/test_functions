@@ -1,3 +1,4 @@
+
 print('********************************************************************')
 print("===============CREATE TUPLE==============")
 """
@@ -549,3 +550,133 @@ def tup_str():
 
 
 tup_str()
+
+print('********************************************************************')
+print("------------------------------------------")
+print("===============TUPLE WITH STRING FORMATION ==============")
+"""
+20. Write a Python program to print a tuple with string formatting.
+Sample tuple : (100, 200, 300)
+Output : This is a tuple (100, 200, 300)
+"""
+
+my_tuple = (100, 200, 300)
+print('This is a tuple {}'.format(my_tuple))
+
+
+print('----**** USING FUNCTION ****-----------')
+
+def tup_str():
+    my_tuple = (100, 200, 300)
+    print('This is a tuple {}'.format(my_tuple))
+
+tup_str
+
+print('********************************************************************')
+print("------------------------------------------")
+print("===============REPLACE LAST VALUE ==============")
+"""
+21. Write a Python program to replace last value of tuples in a list.
+Sample list: [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+Expected Output: [(10, 20, 100), (40, 50, 100), (70, 80, 100)]
+"""
+
+my_list = [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+
+new_list = [i[:len(i)-1]+(100,) for i in my_list]
+print(new_list)
+
+print('----**** USING FUNCTION ****-----------')
+
+
+def replace():
+    my_list = [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+
+    new_list = [i[:len(i) - 1] + (100,) for i in my_list]
+    print(new_list)
+
+replace()
+
+print('********************************************************************')
+print("------------------------------------------")
+print("===============REMOVE EMPTY TUPLES ==============")
+"""
+22. Write a Python program to remove an empty tuple(s) from a list of tuples.
+Sample data: [(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')]
+Expected output: [('',), ('a', 'b'), ('a', 'b', 'c'), 'd']
+"""
+
+
+my_list = [(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')]
+
+new_list = [i for i in my_list if i]
+print(new_list)
+
+
+print('----**** USING FUNCTION ****-----------')
+
+
+def empty_tup():
+    my_list = [(), (), ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')]
+    new_list = [i for i in my_list if i]
+    print(new_list)
+
+
+empty_tup()
+
+print('********************************************************************')
+print("------------------------------------------")
+print("===============SORT A LIST OF TUPLE ==============")
+"""
+23. Write a Python program to sort a listof tuples by the float element.
+Sample data: [('item1', '12.20'), ('item2', '15.10'), ('item3', '24.5')]
+Expected Output: [('item3', '24.5'), ('item2', '15.10'), ('item1', '12.20')]
+"""
+
+my_list = [('item1', '12.20'), ('item2', '15.10'), ('item3', '24.5')]
+
+my_list.sort(key=lambda x: x[1], reverse=True)
+print(my_list)
+
+print('----**** USING FUNCTION ****-----------')
+
+
+def sort_float():
+    my_list = [('item1', '12.20'), ('item2', '15.10'), ('item3', '24.5')]
+    my_list.sort(key=lambda x: x[1], reverse=True)
+    print(my_list)
+
+
+sort_float()
+
+print('********************************************************************')
+print("------------------------------------------")
+print("===============COUNT THE ELEMENTS ==============")
+"""
+24. Write a Python program to count the elements in a list until an element is a tuple.
+"""
+
+my_list = [1, 2, 3, (4,), 5, 6]
+
+counter = 0
+for i in my_list:
+    if not isinstance(i, tuple):
+        counter += 1
+    else:
+        break
+print(counter)
+
+print('----**** USING FUNCTION ****-----------')
+
+
+def count_tup():
+    my_list = [1, 2, 3, (4,), 5, 6]
+    counter = 0
+    for i in my_list:
+        if not isinstance(i, tuple):
+            counter += 1
+        else:
+            break
+    print(counter)
+
+count_tup()
