@@ -1,0 +1,80 @@
+FLASK STRUCTURE:-
+---------------------
+
+---> 1.SINGLE ==
+           All Files were written in a one file(app.py) including the html css part too. It is using for small app. like CRUD operation "Hello World" in the local host.
+	
+
+
+
+----> 2.MODUAR ==
+            It was using for appications and need to create static and template all things. structure as fallows
+
+ ~/LargeApp
+    |-- run.py
+    |-- config.py
+    |__ /env             # Virtual Environment
+    |__ /app             # Our Application Module
+         |-- __init__.py
+         |-- /mod_auth   # Our first module, mod_auth
+             |-- __init__.py
+             |-- controllers.py
+             |-- models.py
+             |-- forms.py
+         |__ /templates
+             |-- 404.html
+             |__ /auth
+                 |-- signin.html
+         |__ /static
+		 
+Ex:
+    packages
+	     |--Virtual Environment
+		 |--Static
+		 |--Templates
+		        |--index.html
+		        |--batsman.html
+				|--bowler.html
+		 |--__init__.py
+		 |--routes.py
+		 
+	|--run.py
+			
+
+
+---->3.BLUEPRINT::
+   
+   
+├── flaskr/
+│   ├── __init__.py
+│   ├── db.py
+│   ├── schema.sql
+│   ├── auth.py
+│   ├── blog.py
+│   ├── templates/
+│   │   ├── base.html
+│   │   ├── auth/
+│   │   │   ├── login.html
+│   │   │   └── register.html
+│   │   └── blog/
+│   │       ├── create.html
+│   │       ├── index.html
+│   │       └── update.html
+│   └── static/
+│       └── style.css
+├── tests/
+│   ├── conftest.py
+│   ├── data.sql
+│   ├── test_factory.py
+│   ├── test_db.py
+│   ├── test_auth.py
+│   └── test_blog.py
+├── venv/
+├── setup.py
+└── MANIFEST.in
+
+
+
+
+
+
