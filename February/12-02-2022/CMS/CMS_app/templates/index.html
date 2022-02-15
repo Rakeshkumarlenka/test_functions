@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <title>Employee Operations</title>
+    </head>
+    <body>
+        <center>
+            <h1>Employee details crud operations</h1>
+            <hr/>
+            <table border= "1">
+                <tr>
+                    <th>Employee Id</th>
+                    <th>Employee Name</th>
+                    <th>Email</th>
+                    <th>Occupation</th>
+                    <th>Salary</th>
+                    <th>Gender</th>  
+                </tr>
+                {%for result in data%}
+                <tr>
+                    <td>{{result.id}}</td>
+                    <td>{{result.empname}}</td>
+                    <td>{{result.email}}</td>
+                    <td>{{result.occupation}}</td>
+                    <td>{{result.salary}}</td>
+                    <td>{{result.gender}}</td>  
+                </tr>
+                {% endfor %}
+        </center>
+      
+        
+        <script src="" async defer></script>
+    </body>
+</html>
