@@ -1,0 +1,13 @@
+storefront - setting up database 
+
+postgresql - Data Types
+Create Database
+Create Tables
+Insert Data
+Update Data
+Delete Data
+CONSTRAINT
+ALTER TABLE
+SELECT Statement
+WHERE Clause
+DISTINCT Clause
